@@ -7,14 +7,6 @@
 <script language="javascript" type="text/javascript">
     function updateMonster() {
         $.getJSON('http://me.primaryobjects.com:17889/Monster?callback=?', function(data) { onComplete(data); });
-
-        //var date = new Date();
-        /*$.ajax({
-            url: 'http://me.primaryobjects.com:17889/Monster?callback=?', // + date.getTime() + '&callback=?',
-            dataType: 'json',
-            success: function (data) { onComplete(data); },
-            error: function (xhr, ajaxOptions, thrownError) { alert(xhr.statusText); alert(thrownError); }
-        });*/
     }
 
     function onComplete(data) {
